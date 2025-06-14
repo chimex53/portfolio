@@ -1,7 +1,11 @@
+/**
+ * Hero section component that serves as the landing page of the portfolio.
+ * Features personal introduction, professional title, and call-to-action buttons.
+ */
 import React from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import profile from '../../assets/profile.jpg' // Update with your profile image path
+import profile from '../../assets/profile.jpg' 
 import styles from './Home.module.css'
 
 const Home = () => {
@@ -9,19 +13,27 @@ const Home = () => {
     <section id="home" className={styles.home}>
       <div className="container">
         <div className={styles.content}>
+          {/* Left side - Text content with animations */}
           <motion.div
             className={styles.textContent}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
+            {/* Main title and name with highlight */}
             <h1 className={styles.title}>
               Hi, I'm <span className={styles.name}>Ugwu Chimezie</span>
             </h1>
-            <h2 className={styles.subtitle}>Full Stack Developer</h2>
+
+            {/* Professional skills and expertise */}
+            <h2 className={styles.subtitle}>Expert React Developer | Nextjs | Supabase | Tailwind | SEO Expert </h2>
+            
+            {/* Brief introduction */}
             <p className={styles.description}>
               I craft responsive websites and web applications that provide users with a seamless experience.
             </p>
+
+            {/* Call-to-action buttons with hover animations */}
             <div className={styles.cta}>
               <motion.a
                 href="#contact"
@@ -40,12 +52,15 @@ const Home = () => {
                 View Work
               </motion.a>
             </div>
+
+            {/* Social media links with hover effects */}
             <div className={styles.socialLinks}>
               <motion.a
                 href="https://github.com/yourusername"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -3 }}
+                aria-label="GitHub Profile"
               >
                 <FaGithub />
               </motion.a>
@@ -54,6 +69,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -3 }}
+                aria-label="LinkedIn Profile"
               >
                 <FaLinkedin />
               </motion.a>
@@ -62,12 +78,14 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -3 }}
+                aria-label="Twitter Profile"
               >
                 <FaTwitter />
               </motion.a>
             </div>
           </motion.div>
           
+          {/* Right side - Profile image with animation */}
           <motion.div
             className={styles.imageContent}
             initial={{ opacity: 0, scale: 0.8 }}
@@ -75,7 +93,6 @@ const Home = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <div className={styles.heroImage}>
-              {/* Add your profile image here */}
               <img src={profile} alt="Profile" />
             </div>
           </motion.div>

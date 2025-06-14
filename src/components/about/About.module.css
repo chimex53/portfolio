@@ -1,148 +1,420 @@
+/* ==========================================================================
+   About Section Styles
+   Main styles for the About section, including layout, typography, and animations
+   ========================================================================== */
+
+/* Main container
+   ========================================================================== */
 .about {
   background-color: var(--light-color);
   padding: var(--section-padding);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Content wrapper with maximum width for readability
+   ========================================================================== */
 .content {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 1rem;
+  position: relative;
+  z-index: 1;
 }
 
+/* Layout for about information
+   ========================================================================== */
 .aboutInfo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
+/* Card styling with enhanced visual effects
+   ========================================================================== */
 .introductionWrapper {
-  text-align: center;
   position: relative;
-  padding: 2rem 0;
+  padding: 2.5rem;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(158, 29, 61, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(158, 29, 61, 0.1);
 }
 
+.introductionWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(158, 29, 61, 0.12);
+}
+
+/* Enhanced icon styling
+   ========================================================================== */
 .codeIcon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  display: block;
+  text-align: center;
+  transform: rotate(-5deg);
+  transition: transform 0.3s ease;
+}
+
+.introductionWrapper:hover .codeIcon {
+  transform: rotate(5deg);
+}
+
+.titleIcon {
   font-size: 2rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
-  display: inline-block;
+  margin-right: 1rem;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
 }
 
-.introduction {
-  font-size: 1.3rem;
-  line-height: 1.8;
+.sectionIcon {
+  font-size: 1.4rem;
   color: var(--primary-color);
-  font-weight: 500;
+  margin-right: 0.8rem;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
 }
 
-.details {
+h4:hover .sectionIcon {
+  transform: scale(1.1);
+}
+
+.listIcon {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin-right: 0.8rem;
+  vertical-align: middle;
+}
+
+/* Enhanced typography
+   ========================================================================== */
+.introduction {
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.introTitle {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.introSection {
+  margin-bottom: 2.5rem;
+  text-align: left;
+}
+
+.introSection p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Enhanced service section
+   ========================================================================== */
+.serviceSection {
+  margin-bottom: 2.5rem;
+  text-align: left;
+  padding: 1.5rem;
+  background-color: var(--accent-color);
+  border-radius: 12px;
+}
+
+.serviceSection h4 {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+/* Enhanced expertise list
+   ========================================================================== */
+.expertiseList {
+  margin: 2rem 0;
+}
+
+.expertiseList h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.expertiseList ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.expertiseList li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.expertiseList li:hover {
+  transform: translateX(5px);
+}
+
+/* Enhanced value section
+   ========================================================================== */
+.valueSection {
+  margin: 2.5rem 0;
+  text-align: left;
+  position: relative;
+}
+
+.callToAction {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin: 2rem 0;
+  text-align: center;
+  padding: 1.5rem;
+  border: 2px dashed var(--primary-color);
+  border-radius: 12px;
+  background-color: rgba(158, 29, 61, 0.05);
+}
+
+/* Enhanced strengths section
+   ========================================================================== */
+.strengthsSection {
+  text-align: left;
+  background-color: var(--accent-color);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2.5rem;
+}
+
+.strengthsSection h4 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.strengthsSection ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.strengthsSection li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.strengthsSection li:hover {
+  transform: translateX(5px);
+}
+
+/* Education and experience details
+   ========================================================================== */
+.educationDetail {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--secondary-color);
+  margin-top: 0.3rem;
+  font-style: italic;
+}
+
+/* Enhanced details section
+   ========================================================================== */
+.details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(158, 29, 61, 0.08);
+  border: 1px solid rgba(158, 29, 61, 0.1);
 }
 
 .detailGroup {
   padding: 1.5rem;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  background-color: #f8f9fa;
+  background-color: var(--accent-color);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .detailGroup:hover {
-  transform: translateX(10px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(158, 29, 61, 0.12);
 }
 
 .detailHeader {
   display: flex;
   align-items: center;
-  gap: 1rem;
   margin-bottom: 1rem;
+  gap: 0.8rem;
 }
 
-.detailIcon {
-  font-size: 1.5rem;
+.detailHeader h3 {
   color: var(--primary-color);
-  min-width: 24px;
-}
-
-.detailGroup h3 {
-  font-size: 1.1rem;
-  color: var(--text-color);
+  font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
 }
 
-.detailGroup p {
-  color: var(--secondary-color);
-  line-height: 1.7;
-  font-size: 1rem;
-  margin-left: calc(24px + 1rem);
+.detailIcon {
+  color: var(--primary-color);
+  font-size: 1.5rem;
 }
 
+.detailGroup p {
+  color: var(--text-color);
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Button styles
+   ========================================================================== */
 .cta {
   display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.5rem;
+  margin-top: 3rem;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .btnIcon {
   margin-right: 0.5rem;
+  font-size: 1.1rem;
+  vertical-align: middle;
 }
 
 .resumeBtn {
-  display: flex;
-  align-items: center;
-  padding: 0.75rem 1.5rem;
+  background-color: transparent;
   border: 2px solid var(--primary-color);
-  border-radius: 0.5rem;
   color: var(--primary-color);
-  font-weight: 500;
-  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.3s ease;
+  min-width: 180px;
+  text-align: center;
 }
 
 .resumeBtn:hover {
   background-color: var(--primary-color);
   color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(158, 29, 61, 0.2);
 }
 
-.title {
-  color: var(--text-color);
+.cta a {
+  min-width: 180px;
+  text-align: center;
+  justify-content: center;
+  display: inline-flex;
+  align-items: center;
 }
 
-.infoIcon {
-  color: var(--primary-color);
-}
-
-.infoTitle {
-  color: var(--secondary-color);
-}
-
-.infoDescription {
-  color: var(--text-color);
-}
-
-@media screen and (max-width: 480px) {
-  .cta {
-    flex-direction: column;
-    align-items: stretch;
+/* Responsive design
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+  .introductionWrapper {
+    padding: 1.5rem;
   }
 
-  .introduction {
+  .expertiseList ul,
+  .strengthsSection ul {
+    grid-template-columns: 1fr;
+  }
+
+  .callToAction {
     font-size: 1.1rem;
+    padding: 1rem;
   }
 
-  .resumeBtn {
-    text-align: center;
-    justify-content: center;
+  .cta {
+    flex-direction: row;
+    gap: 1rem;
   }
 
-  .detailGroup:hover {
-    transform: none;
+  .details {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .detailGroup {
+    padding: 1.2rem;
+  }
+
+  .detailHeader h3 {
+    font-size: 1.2rem;
+  }
+
+  .detailIcon {
+    font-size: 1.3rem;
   }
 
   .detailGroup p {
-    margin-left: 0;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .introTitle {
+    font-size: 1.4rem;
+  }
+
+  .serviceSection h4,
+  .expertiseList h4,
+  .strengthsSection h4 {
+    font-size: 1.1rem;
+  }
+
+  .expertiseList li,
+  .strengthsSection li {
+    font-size: 1rem;
+  }
+  .cta {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .cta a {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+  }
+
+  .resumeBtn {
+    justify-content: center;
+    width: 100%;
+    max-width: 280px;
   }
 }
