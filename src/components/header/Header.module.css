@@ -23,6 +23,7 @@
   font-size: 1.8rem;
   color: var(--primary-color);
   text-decoration: none;
+  transition: font-size 0.3s ease;
 }
 
 .navList {
@@ -160,5 +161,19 @@
 
   .navItem a:hover::after {
     width: 70%;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    padding: 0 1rem;
   }
 }
