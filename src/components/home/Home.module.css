@@ -14,6 +14,36 @@
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imageContent {
+    order: -1; /* This moves the image to the top on mobile */
+    margin: 0 auto 2rem;
+  }
+
+  .textContent {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .cta {
+    justify-content: center;
+  }
+
+  .socialLinks {
+    justify-content: center;
+  }
+}
+
 .textContent {
   padding-right: 2rem;
 }
@@ -94,6 +124,19 @@
   max-width: 350px;
   margin: 0 auto;
   border: 3px dotted var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+  .imageContent {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .heroImage {
+    max-width: 280px;
+    padding: 10px;
+    border-radius: 25px;
+  }
 }
 
 .heroImage img {
