@@ -1,5 +1,5 @@
 .about {
-  background-color: #ffffff;
+  background-color: var(--light-color);
   padding: var(--section-padding);
 }
 
@@ -105,6 +105,22 @@
 .resumeBtn:hover {
   background-color: var(--primary-color);
   color: white;
+}
+
+.title {
+  color: var(--text-color);
+}
+
+.infoIcon {
+  color: var(--primary-color);
+}
+
+.infoTitle {
+  color: var(--secondary-color);
+}
+
+.infoDescription {
+  color: var(--text-color);
 }
 
 @media screen and (max-width: 480px) {

@@ -1,6 +1,18 @@
 .skills {
-  background-color: #333333;
   padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.title {
+  color: var(--text-color);
+}
+
+.skillIcon {
+  color: var(--primary-color);
+}
+
+.skillName {
+  color: var(--text-color);
 }
 
 .skillsGrid {

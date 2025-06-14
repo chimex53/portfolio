@@ -1,7 +1,6 @@
 .footer {
-  background-color: #1a1a1a;
-  color: white;
-  padding: 4rem 0 2rem;
+  background-color: var(--primary-color);
+  padding: 2rem 0;
 }
 
 .content {
@@ -9,22 +8,23 @@
   grid-template-columns: 2fr 1fr 1fr;
   gap: 4rem;
   margin-bottom: 3rem;
+  color: var(--background-color);
 }
 
 .brand h3 {
   font-size: 1.8rem;
-  color: var(--primary-color);
+  color: var(--background-color);
   margin-bottom: 1rem;
 }
 
 .brand p {
-  color: #a0aec0;
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.6;
 }
 
 .navigation h4,
 .social h4 {
-  color: white;
+  color: var(--background-color);
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
 }
@@ -38,34 +38,53 @@
 }
 
 .navigation ul li a {
-  color: #a0aec0;
+  color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 .navigation ul li a:hover {
-  color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.navigation ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--background-color);
+  transition: width 0.3s ease;
+}
+
+.navigation ul li a:hover::after {
+  width: 100%;
 }
 
 .socialLinks {
   display: flex;
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .socialLinks a {
-  color: #a0aec0;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .socialLinks a:hover {
-  color: var(--primary-color);
+  color: var(--background-color);
+  transform: translateY(-3px);
 }
 
 .copyright {
   text-align: center;
   padding-top: 2rem;
-  border-top: 1px solid #2d3748;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .copyright p {

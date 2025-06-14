@@ -1,6 +1,26 @@
 .contact {
-  background-color: #333333;
   padding: var(--section-padding);
+  background-color: var(--background-color);
+}
+
+.title {
+  color: var(--text-color);
+}
+
+.contactIcon {
+  color: var(--primary-color);
+}
+
+.contactType {
+  color: var(--secondary-color);
+}
+
+.contactValue {
+  color: var(--text-color);
+}
+
+.contactValue a:hover {
+  color: var(--primary-color);
 }
 
 .content {
