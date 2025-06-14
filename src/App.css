@@ -5,7 +5,22 @@
   --text-color: #1a1a1a;
   --accent-color: #fdf0f3;
   --light-color: #f8f8f8;
+  --card-bg: #ffffff;
+  --border-color: rgba(158, 29, 61, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.1);
   --section-padding: 4rem 0;
+}
+
+[data-theme="dark"] {
+  --primary-color: #ff3366;
+  --secondary-color: #ff6b8b;
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #1e1e1e;
+  --light-color: #2d2d2d;
+  --card-bg: #1e1e1e;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 * {

@@ -7,6 +7,7 @@ import Skills from './components/skills/Skills'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import BackToTop from './components/backToTop/BackToTop'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Contact />
         </main>
         <Footer />
+        <BackToTop />
       </div>
     </Router>
   )

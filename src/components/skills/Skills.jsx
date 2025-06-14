@@ -7,14 +7,15 @@ import {
   FaReact, 
   FaGitAlt, 
 } from 'react-icons/fa'
+import { SiTailwindcss } from 'react-icons/si'
 import styles from './Skills.module.css'
 
-const Skills = () => {
-  const skills = [
+const Skills = () => {  const skills = [
     { name: 'HTML5', icon: <FaHtml5 />, level: 90 },
     { name: 'CSS3', icon: <FaCss3Alt />, level: 85 },
     { name: 'JavaScript', icon: <FaJs />, level: 90 },
     { name: 'React', icon: <FaReact />, level: 85 },
+    { name: 'Tailwind CSS', icon: <SiTailwindcss />, level: 88 },
     { name: 'Git', icon: <FaGitAlt />, level: 85 },
   ]
 

@@ -26,8 +26,7 @@ const Footer = () => {
 
   const navLinks = ['Home', 'About', 'Skills', 'Portfolio', 'Contact']
 
-  return (
-    <footer className={styles.footer}>
+  return (    <footer id="footer" className={styles.footer}>
       <div className="container">
         <div className={styles.content}>
           <motion.div 

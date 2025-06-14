@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styles from './Header.module.css'
+import ThemeToggle from './ThemeToggle'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,27 +21,31 @@ const Header = () => {
           Ugwu Chimezie
         </motion.h1>
 
-        <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>
-          <ul className={styles.navList}>
-            {['home', 'about', 'skills', 'portfolio', 'contact'].map((item) => (
-              <motion.li
-                key={item}
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className={styles.navItem}
-              >
-                <a href={`#${item}`} onClick={() => setIsMenuOpen(false)}>
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
-                </a>
-              </motion.li>
-            ))}
-          </ul>
-        </nav>
+        <div className={styles.rightSection}>
+          <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>
+            <ul className={styles.navList}>
+              {['home', 'about', 'skills', 'portfolio', 'contact'].map((item) => (
+                <motion.li
+                  key={item}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                  className={styles.navItem}
+                >
+                  <a href={`#${item}`} onClick={() => setIsMenuOpen(false)}>
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </a>
+                </motion.li>
+              ))}
+            </ul>
+          </nav>
 
-        <button className={styles.menuBtn} onClick={toggleMenu}>
-          {isMenuOpen ? <FaTimes /> : <FaBars />}
-        </button>
+          <ThemeToggle />
+          
+          <button className={styles.menuBtn} onClick={toggleMenu}>
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
       </div>
     </header>
   )
