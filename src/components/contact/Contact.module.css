@@ -1,6 +1,7 @@
 .contact {
   padding: var(--section-padding);
   background-color: var(--background-color);
+  padding-top: 1rem;
 }
 
 .title {
@@ -39,7 +40,7 @@
 .contactInfo h3 {
   font-size: 1.8rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .contactInfo > p {
@@ -204,6 +205,11 @@
 
 .contactCard:hover .linkText {
   color: var(--primary-color);
+}
+
+.contact :global(.section__title) {
+  margin: 1rem 0 2rem 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 968px) {

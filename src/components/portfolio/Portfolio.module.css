@@ -1,14 +1,14 @@
 .portfolio {
-  padding: 5rem 0;
+  padding: 2rem 0;
   background-color: var(--background-color);
 }
 
 .portfolioTitle {
   font-size: 2.5rem;
   font-weight: 600;
-  text-align: left;
+  text-align: center;
   color: var(--text-color);
-  margin-bottom: 3rem;
+  margin: 0.1rem 0 2.5rem 0;
   padding-left: 2rem;
 }
 
@@ -42,6 +42,7 @@
   font-weight: 600;
   color: var(--text-color);
   margin-bottom: 1.5rem;
+  margin: 0 auto;
 }
 
 .projectCard:nth-child(4) .projectTitle {

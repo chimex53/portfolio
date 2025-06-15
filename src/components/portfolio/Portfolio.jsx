@@ -11,19 +11,18 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'Igbo Amaka',
-      description: 'Interactive language application for learning the Igbo Language. This is a mobile application that enables individuals to learn the Igbo Language interactively, using images, audio pronunciations and quizzes.',
+      title: 'Ngo Best catering services',
+      description: 'A landing page designed for catrering services. It features a modern design with a focus on user experience, showcasing the services offered and providing easy navigation for potential customers.',
       image: landingPage,
-      technologies: ['JAVA', 'AUDIO MEDIA PLAYERS', 'MATERIAL DESIGN', 'ANIMATION LIBRARIES'],
+      technologies: ['Reat', 'Tailwind', 'NextJs', ],
       liveLink: 'https://play.google.com/store/apps/details?id=com.igboamaka',
       githubLink: 'https://github.com/chimex53/igbo-amaka'
     },
     {
-      id: 2,
-      title: 'Hydra Mail',
-      description: 'Voice-Based Email Application. This is a voice-based email application that enables the visually challenged send mails without the use of keyboard operations or mouse clicks.',
+      id: 2,      title: 'Flexy Store',
+      description: 'A modern e-commerce platform built with cutting-edge technologies. Features include a dynamic product catalog, secure payment processing, user authentication, wishlist functionality, shopping cart management, and order tracking. The platform offers a smooth shopping experience with responsive design and optimized performance.',
       image: fleImage,
-      technologies: ['JAVA', 'ANDROID TEXT TO SPEECH', 'MAIL SMTP', 'REGULAR EXPRESSIONS'],
+      technologies: ['REACT', 'NODE.JS', 'MONGODB', 'STRIPE', 'REDUX'],
       liveLink: 'https://hydramail-demo.netlify.app',
       githubLink: 'https://github.com/chimex53/hydramail'
     },
@@ -56,7 +55,7 @@ const Portfolio = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          PROJECTS
+        Portfolio
         </motion.h2>
 
         <div className={styles.projectsContainer}>
