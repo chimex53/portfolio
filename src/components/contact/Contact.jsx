@@ -8,14 +8,13 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: 'Email',
-      content: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      content: 'ugwuchimezie3@gmail.com',
+      link: 'mailto:ugwuchimezie3@gmail.com?subject=Project%20Inquiry&body=Hello%20Chimezie,%0D%0A%0D%0AI%20am%20reaching%20out%20regarding%20a%20potential%20project.%0D%0A%0D%0AProject%20Details:%0D%0A%0D%0ABest%20regards,'
     },
     {
       icon: <FaPhone />,
       title: 'Phone',
-      content: '+1 234 567 890',
-      link: 'tel:+1234567890'
+      content: '+23407061954752',
     },
     {
       icon: <FaMapMarkerAlt />,
@@ -46,6 +45,12 @@ const Contact = () => {
     }
   ]
 
+  const handleClick = (link) => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
+
   return (
     <section id="contact" className={styles.contact}>
       <div className="container">
@@ -68,23 +73,26 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             {contactInfo.map((info, index) => (
-              <motion.a
+              <motion.div
                 key={index}
-                href={info.link}
                 className={styles.contactCard}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                onClick={() => handleClick(info.link)}
+                style={{ cursor: info.link ? 'pointer' : 'default' }}
               >
                 <div className={styles.iconWrapper}>
                   {info.icon}
                 </div>
                 <div className={styles.infoContent}>
                   <h3>{info.title}</h3>
-                  <p>{info.content}</p>
+                  <p className={info.link ? styles.linkText : ''}>
+                    {info.content}
+                  </p>
                 </div>
-              </motion.a>
+              </motion.div>
             ))}
           </motion.div>
 
@@ -105,7 +113,7 @@ const Contact = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className={styles.iconWrapper}>
                   {social.icon}

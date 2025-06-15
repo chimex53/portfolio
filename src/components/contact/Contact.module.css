@@ -185,6 +185,27 @@
   text-align: center;
 }
 
+.contactLink {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.contactLink:hover {
+  color: var(--primary-color);
+}
+
+.linkText {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.contactCard:hover .linkText {
+  color: var(--primary-color);
+}
+
 @media screen and (max-width: 968px) {
   .content {
     grid-template-columns: 1fr;
