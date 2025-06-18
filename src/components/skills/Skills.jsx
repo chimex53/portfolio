@@ -17,7 +17,7 @@ import styles from './Skills.module.css'
 const Skills = () => {
   // Skills data with icons and proficiency levels
   const skills = [
-    { name: 'HTML5', icon: <FaHtml5 />, level: 90 },
+    { name: 'HTML5', icon: <FaHtml5 />, level: 100 },
     { name: 'CSS3', icon: <FaCss3Alt />, level: 85 },
     { name: 'JavaScript', icon: <FaJs />, level: 90 },
     { name: 'React', icon: <FaReact />, level: 85 },
@@ -45,7 +45,7 @@ const Skills = () => {
             <motion.div
               key={skill.name}
               className={styles.skillCard}
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.1 }}

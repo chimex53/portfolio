@@ -37,14 +37,14 @@
   padding: 2.5rem;
   background-color: var(--background-color);
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(158, 29, 61, 0.08);
+  box-shadow: 0 4px 20px rgba(26, 86, 219, 0.08); /* Updated to blue shadow */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(158, 29, 61, 0.1);
+  border: 1px solid rgba(26, 86, 219, 0.1); /* Updated to blue border */
 }
 
 .introductionWrapper:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(158, 29, 61, 0.12);
+  box-shadow: 0 8px 25px rgba(26, 86, 219, 0.12); /* Updated to blue shadow */
 }
 
 /* Enhanced icon styling
@@ -189,7 +189,7 @@ h4:hover .sectionIcon {
   padding: 1.5rem;
   border: 2px dashed var(--primary-color);
   border-radius: 12px;
-  background-color: rgba(158, 29, 61, 0.05);
+  background-color: rgba(26, 86, 219, 0.05); /* Updated to blue tint */
 }
 
 /* Enhanced strengths section
@@ -253,8 +253,8 @@ h4:hover .sectionIcon {
   padding: 2rem;
   background-color: var(--background-color);
   border-radius: 15px;
-  box-shadow: 0 4px 20px rgba(158, 29, 61, 0.08);
-  border: 1px solid rgba(158, 29, 61, 0.1);
+  box-shadow: 0 4px 20px rgba(26, 86, 219, 0.08); /* Updated to blue shadow */
+  border: 1px solid rgba(26, 86, 219, 0.1); /* Updated to blue border */
 }
 
 .detailGroup {
@@ -266,7 +266,7 @@ h4:hover .sectionIcon {
 
 .detailGroup:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(158, 29, 61, 0.12);
+  box-shadow: 0 8px 25px rgba(26, 86, 219, 0.12); /* Updated to blue shadow */
 }
 
 .detailHeader {
@@ -329,7 +329,7 @@ h4:hover .sectionIcon {
   background-color: var(--primary-color);
   color: white;
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(158, 29, 61, 0.2);
+  box-shadow: 0 5px 15px rgba(26, 86, 219, 0.2); /* Updated to blue shadow */
 }
 
 .cta a {

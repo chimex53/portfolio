@@ -26,11 +26,12 @@
   margin-bottom: 4rem;
   gap: 4rem;
   align-items: center;
+  border: 1px solid var(--border-color);
 }
 
 .projectCard:nth-child(4) {
-  background-color: rgba(0, 128, 0, 0.05);
-  border: 1px solid rgba(0, 128, 0, 0.1);
+  background-color: rgba(63, 131, 248, 0.05); /* Using your --secondary-color (3f83f8) with 5% opacity */
+  border: 1px solid rgba(63, 131, 248, 0.1); /* Using your --secondary-color with 10% opacity */
 }
 
 .projectInfo {
@@ -46,7 +47,7 @@
 }
 
 .projectCard:nth-child(4) .projectTitle {
-  color: #006400;
+  color: var(--secondary-color); /* Using your secondary blue instead of green */
 }
 
 .projectDescription {
@@ -75,8 +76,8 @@
 }
 
 .projectCard:nth-child(4) .tech {
-  border-color: #006400;
-  color: #006400;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .projectLinks {
@@ -100,7 +101,7 @@
 }
 
 .projectCard:nth-child(4) .projectLink:hover {
-  color: #006400;
+  color: var(--secondary-color);
 }
 
 .projectImageWrapper {
@@ -108,6 +109,7 @@
   max-width: 600px;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0 4px 15px var(--shadow-color);
 }
 
 .projectImage {

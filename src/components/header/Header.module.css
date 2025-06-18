@@ -72,7 +72,7 @@
 
 .themeToggle:hover {
   background-color: var(--accent-color);
-  transform: rotate(15deg);
+  transform: rotate(180deg);
 }
 
 .themeToggle svg {
