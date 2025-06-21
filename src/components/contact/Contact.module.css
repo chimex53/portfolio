@@ -27,7 +27,7 @@
 .content {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 4rem;
+  gap: 1rem;
   align-items: start;
   max-width: 1000px;
   margin: 0 auto;
@@ -149,46 +149,6 @@
   font-size: 0.9rem;
 }
 
-.contactForm form {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.formGroup input,
-.formGroup textarea {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  background-color: var(--card-bg);
-  color: var(--text-color);
-}
-
-.formGroup textarea {
-  height: 150px;
-  resize: vertical;
-}
-
-.formGroup input:focus,
-.formGroup textarea:focus {
-  outline: none;
-  border-color: var(--primary-color);
-}
-
-.successMessage {
-  color: #28a745;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.errorMessage {
-  color: #dc3545;
-  margin-top: 1rem;
-  text-align: center;
-}
 
 .contactLink {
   color: var(--text-color);

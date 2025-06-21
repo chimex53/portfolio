@@ -15,24 +15,20 @@
 .projectsContainer {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
 }
 
 .projectCard {
   display: flex;
   background-color: var(--light-color);
   border-radius: 1rem;
-  padding: 3rem;
+  padding: 2rem;
   margin-bottom: 4rem;
   gap: 4rem;
   align-items: center;
   border: 1px solid var(--border-color);
 }
 
-.projectCard:nth-child(4) {
-  background-color: rgba(63, 131, 248, 0.05); /* Using your --secondary-color (3f83f8) with 5% opacity */
-  border: 1px solid rgba(63, 131, 248, 0.1); /* Using your --secondary-color with 10% opacity */
-}
 
 .projectInfo {
   flex: 1;
@@ -46,9 +42,6 @@
   margin: 0 auto;
 }
 
-.projectCard:nth-child(4) .projectTitle {
-  color: var(--secondary-color); /* Using your secondary blue instead of green */
-}
 
 .projectDescription {
   font-size: 1rem;
@@ -75,11 +68,6 @@
   letter-spacing: 0.5px;
 }
 
-.projectCard:nth-child(4) .tech {
-  border-color: var(--secondary-color);
-  color: var(--secondary-color);
-}
-
 .projectLinks {
   display: flex;
   gap: 1.5rem;
@@ -100,9 +88,6 @@
   color: var(--primary-color);
 }
 
-.projectCard:nth-child(4) .projectLink:hover {
-  color: var(--secondary-color);
-}
 
 .projectImageWrapper {
   flex: 1;
@@ -168,11 +153,11 @@
   }
 
   .projectCard {
-    padding: 1.5rem;
+    padding: 0.5rem;
   }
 
   .projectTitle {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
   }
 
   .technologies {

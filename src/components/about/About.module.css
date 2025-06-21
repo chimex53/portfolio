@@ -17,7 +17,7 @@
 .content {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 0.2rem;
   position: relative;
   z-index: 1;
 }
@@ -27,14 +27,14 @@
 .aboutInfo {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /* Card styling with enhanced visual effects
    ========================================================================== */
 .introductionWrapper {
   position: relative;
-  padding: 2.5rem;
+  padding: 2rem;
   background-color: var(--background-color);
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(26, 86, 219, 0.08); /* Updated to blue shadow */
@@ -50,7 +50,7 @@
 /* Enhanced icon styling
    ========================================================================== */
 .codeIcon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--primary-color);
   margin-bottom: 2rem;
   display: block;

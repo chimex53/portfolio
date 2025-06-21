@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa'
 import styles from './Footer.module.css'
-
+import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'
 const Footer = () => {
   const currentYear = new Date().getFullYear()
   
@@ -36,8 +36,10 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <h3>Ugwu Chimezie</h3>
-            <p>Full Stack Developer</p>
+            <h3>Contact Info</h3>
+          <p> <FaEnvelope /> <strong> :  ugwuchimezie3</strong></p><br />
+          <p><FaPhone />   <strong> : +23407061954752</strong> </p><br />
+          <p><FaMapMarkerAlt />  <strong> : Lagos State, Nigeria.</strong> </p>
           </motion.div>
 
           <motion.div 
@@ -90,7 +92,7 @@ const Footer = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <p>
-            © {currentYear} Built by <FaHeart className={styles.heart} /> ugwu chimezie
+            © {currentYear} All rights reserved <FaHeart className={styles.heart} /> ugwu chimezie
           </p>
         </motion.div>
       </div>

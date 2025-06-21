@@ -18,21 +18,16 @@ function App() {
   return (
     <Router>
       <div className="app">
-        {/* Navigation header with theme toggle */}
         <Header />
-        
-        {/* Main content sections */}
         <main>
-          <Home />      {/* Hero section with introduction */}
-          <About />     {/* About me and professional background */}
-          <Skills />    {/* Technical skills and expertise */}
-          <Portfolio /> {/* Project showcase and work samples */}
-          <Contact />   {/* Contact form and information */}
+          <Home />     
+          <About />     
+          <Skills />  
+          <Portfolio /> 
+          <Contact />   
         </main>
-        
-        {/* Footer and utility components */}
         <Footer />
-        <BackToTop />  {/* Scroll to top button */}
+        <BackToTop />  
       </div>
     </Router>
   )

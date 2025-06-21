@@ -19,14 +19,16 @@ const Portfolio = () => {
       githubLink: 'https://github.com/chimex53/igbo-amaka'
     },
     {
-      id: 2,      title: 'Flexy Store',
+      id: 2, 
+      title: 'Flexy Store',
       description: 'A modern e-commerce platform built with cutting-edge technologies. Features include a dynamic product catalog, secure payment processing, user authentication, wishlist functionality, shopping cart management, and order tracking. The platform offers a smooth shopping experience with responsive design and optimized performance.',
       image: fleImage,
       technologies: ['REACT', 'NODE.JS', 'MONGODB', 'STRIPE', 'REDUX'],
       liveLink: 'https://hydramail-demo.netlify.app',
       githubLink: 'https://github.com/chimex53/hydramail'
     },
-    {      id: 3,
+    { 
+      d: 3,
       title: 'Western Dreams Hotel',
       description: 'A modern hotel booking website with a sleek design and user-friendly interface. Features include room booking, dining reservations, special deals, and an intuitive navigation system.',
       image: westImage,
@@ -44,7 +46,6 @@ const Portfolio = () => {
       githubLink: 'https://github.com/chimex53/jamara'
     }
   ]
-
   return (
     <section id="portfolio" className={styles.portfolio}>
       <div className="container">
@@ -57,7 +58,6 @@ const Portfolio = () => {
         >
         Portfolio
         </motion.h2>
-
         <div className={styles.projectsContainer}>
           {projects.map((project) => (
             <motion.div

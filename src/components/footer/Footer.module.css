@@ -1,5 +1,5 @@
 .footer {
-  background-color: #1a56db; /* Primary blue instead of #9e1d3d */
+  background-color: #1a56db;
   padding: 2rem 0;
 }
 
@@ -8,7 +8,7 @@
   grid-template-columns: 2fr 1fr 1fr;
   gap: 4rem;
   margin-bottom: 3rem;
-  color: var(--background-color); /* Same as before but will work with new scheme */
+  color: var(--background-color);
 }
 
 .brand h3 {
@@ -18,7 +18,7 @@
 }
 
 .brand p {
-  color: rgba(255, 255, 255, 0.8); /* Same opacity, works with blue */
+  color: rgba(255, 255, 255, 0.8); 
   line-height: 1.6;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .navigation ul li a {
-  color: rgba(255, 255, 255, 0.8); /* Same as original */
+  color: rgba(255, 255, 255, 0.8); 
   text-decoration: none;
   transition: all 0.3s ease;
   position: relative;
@@ -70,7 +70,7 @@
 }
 
 .socialLinks a {
-  color: rgba(255, 255, 255, 0.8); /* Same as original */
+  color: rgba(255, 255, 255, 0.8); 
   font-size: 1.5rem;
   transition: all 0.3s ease;
 }
@@ -88,11 +88,11 @@
 }
 
 .copyright p {
-  color: rgba(255, 255, 255, 0.7); /* Slightly lighter than original */
+  color: rgba(255, 255, 255, 0.7); 
 }
 
 .heart {
-  color: #ff6b8b; /* Complementary pink instead of #e53e3e */
+  color: #ff6b8b; 
   display: inline-block;
   margin: 0 0.25rem;
   animation: heartBeat 1.5s infinite;
