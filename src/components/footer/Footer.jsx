@@ -34,7 +34,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+            transition={{ duration: 0.25 }}
           >
             <h3>Contact Info</h3>
           <p> <FaEnvelope /> <strong> :  ugwuchimezie3</strong></p><br />
@@ -47,7 +47,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.25, delay: 0.05 }}
           >
             <h4>Quick Links</h4>
             <ul>
@@ -64,7 +64,7 @@ const Footer = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.25, delay: 0.1 }}
           >
             <h4>Connect With Me</h4>
             <div className={styles.socialLinks}>
@@ -89,7 +89,7 @@ const Footer = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
+          transition={{ duration: 0.25, delay: 0.15 }}
         >
           <p>
             © {currentYear} All rights reserved <FaHeart className={styles.heart} /> ugwu chimezie

@@ -34,7 +34,7 @@ const Skills = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
         >
           Tech Stack
         </motion.h2>
@@ -48,7 +48,7 @@ const Skills = () => {
               initial={{ opacity: 0, scale: 1 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
+              transition={{ duration: 0.15, delay: index * 0.05 }}
             >
               {/* Skill icon */}
               <div className={styles.skillIcon}>
@@ -65,7 +65,7 @@ const Skills = () => {
                   initial={{ width: 0 }}
                   whileInView={{ width: `${skill.level}%` }}
                   viewport={{ once: true }}
-                  transition={{ duration: 1, delay: 0.5 + index * 0.1 }}
+                  transition={{ duration: 0.5, delay: 0.2 + index * 0.05 }}
                 />
               </div>
               

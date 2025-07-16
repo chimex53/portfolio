@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import styles from './Header.module.css'
 import ThemeToggle from './ThemeToggle'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,7 +16,7 @@ const Header = () => {
         <motion.h1 
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
           className={styles.logo}
         >
           Ugwu Chimezie
@@ -29,12 +30,12 @@ const Header = () => {
                   key={item}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
+                  transition={{ duration: 0.25, delay: 0.05 }}
                   className={styles.navItem}
                 >
-                  <a href={`#${item}`} onClick={() => setIsMenuOpen(false)}>
+                  <Link to={item === 'home' ? '/' : `/${item}`} onClick={() => setIsMenuOpen(false)}>
                     {item.charAt(0).toUpperCase() + item.slice(1)}
-                  </a>
+                  </Link>
                 </motion.li>
               ))}
             </ul>

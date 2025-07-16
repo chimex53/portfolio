@@ -1,6 +1,10 @@
 import React from 'react'
-import { motion } from 'framer-motion'
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
+import { FaPhone } from 'react-icons/fa'
+import { FaMapMarkerAlt } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
+import { FaTwitter } from 'react-icons/fa'
 import styles from './Contact.module.css'
 
 const Contact = () => {
@@ -54,32 +58,13 @@ const Contact = () => {
   return (
     <section id="contact" className={styles.contact}>
       <div className="container">
-        <motion.h2
-          className="section__title"
-          initial={{ opacity: 0, y: -20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          Get In Touch
-        </motion.h2>
-
+        <h2 className="section__title">Get In Touch</h2>
         <div className={styles.content}>
-          <motion.div
-            className={styles.contactGrid}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-          >
+          <div className={styles.contactGrid}>
             {contactInfo.map((info, index) => (
-              <motion.div
+              <div
                 key={index}
                 className={styles.contactCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
                 onClick={() => handleClick(info.link)}
                 style={{ cursor: info.link ? 'pointer' : 'default' }}
               >
@@ -92,28 +77,17 @@ const Contact = () => {
                     {info.content}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </motion.div>
-
-          <motion.div
-            className={styles.socialGrid}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
+          </div>
+          <div className={styles.socialGrid}>
             {socialLinks.map((social, index) => (
-              <motion.a
+              <a
                 key={index}
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.socialCard}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <div className={styles.iconWrapper}>
                   {social.icon}
@@ -122,9 +96,9 @@ const Contact = () => {
                   <h3>{social.title}</h3>
                   <p>{social.content}</p>
                 </div>
-              </motion.a>
+              </a>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

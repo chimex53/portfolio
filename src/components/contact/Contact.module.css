@@ -172,8 +172,15 @@
 }
 
 .contact :global(.section__title) {
-  margin: 1rem 0 2rem 0;
+  margin: 3rem 0 2rem 0;
   text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  background: var(--accent-color);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 @media screen and (max-width: 968px) {

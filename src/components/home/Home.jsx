@@ -18,7 +18,7 @@ const Home = () => {
             className={styles.textContent}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.3 }}
           >
             {/* Main title and name with highlight */}
             <h1 className={styles.title}>
@@ -90,10 +90,10 @@ const Home = () => {
             className={styles.imageContent}
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: 0.05 }}
           >
             <div className={styles.heroImage}>
-              <img src={profile} alt="Profile" />
+              <img src={profile} alt="Profile" loading="lazy" />
             </div>
           </motion.div>
         </div>

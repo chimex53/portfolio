@@ -54,7 +54,7 @@ const Portfolio = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 10 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
         >
         Portfolio
         </motion.h2>
@@ -66,7 +66,7 @@ const Portfolio = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
+              transition={{ duration: 0.25 }}
             >
               <div className={styles.projectInfo}>
                 <h3 className={styles.projectTitle}>{project.title}</h3>
@@ -88,7 +88,7 @@ const Portfolio = () => {
                 </div>
               </div>
               <div className={styles.projectImageWrapper}>
-                <img src={project.image} alt={project.title} className={styles.projectImage} />
+                <img src={project.image} alt={project.title} className={styles.projectImage} loading="lazy" />
               </div>
             </motion.div>
           ))}

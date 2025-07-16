@@ -23,7 +23,7 @@ const About = () => {
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
         >
           About Me
         </motion.h2>
@@ -33,7 +33,7 @@ const About = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.25 }}
         >
           <div className={styles.aboutInfo}>
             <div className={styles.introductionWrapper}>
@@ -103,7 +103,7 @@ const About = () => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.25 }}
               >
                 <div className={styles.detailHeader}>
                   <FaUserGraduate className={styles.detailIcon} />
@@ -118,7 +118,7 @@ const About = () => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 }}
+                transition={{ duration: 0.25, delay: 0.05 }}
               >
                 <div className={styles.detailHeader}>
                   <FaTools className={styles.detailIcon} />
@@ -133,7 +133,7 @@ const About = () => {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
+                transition={{ duration: 0.25, delay: 0.1 }}
               >
                 <div className={styles.detailHeader}>
                   <FaRocket className={styles.detailIcon} />

@@ -1,10 +1,6 @@
-/**
- * Main application component that serves as the root of the portfolio website.
- * Handles the overall layout and routing structure of the application.
- */
-import { BrowserRouter as Router } from 'react-router-dom'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-// Core components for different sections of the portfolio
 import Header from './components/header/Header'
 import Home from './components/home/Home'
 import About from './components/about/About'
@@ -20,14 +16,16 @@ function App() {
       <div className="app">
         <Header />
         <main>
-          <Home />     
-          <About />     
-          <Skills />  
-          <Portfolio /> 
-          <Contact />   
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </main>
         <Footer />
-        <BackToTop />  
+        <BackToTop />
       </div>
     </Router>
   )
