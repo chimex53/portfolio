@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import profile from '../../assets/profile.jpg' 
 import styles from './Home.module.css'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -35,22 +36,16 @@ const Home = () => {
 
             {/* Call-to-action buttons with hover animations */}
             <div className={styles.cta}>
-              <motion.a
-                href="#contact"
-                className="btn"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                Get in Touch
-              </motion.a>
-              <motion.a
-                href="#portfolio"
-                className={`btn ${styles.secondaryBtn}`}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                View Work
-              </motion.a>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link to="/contact" className="btn">
+                  Get in Touch
+                </Link>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                <Link to="/portfolio" className={`btn ${styles.secondaryBtn}`}>
+                  View Work
+                </Link>
+              </motion.div>
             </div>
 
             {/* Social media links with hover effects */}

@@ -40,7 +40,8 @@
 .contactInfo h3 {
   font-size: 1.8rem;
   color: var(--primary-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
+
 }
 
 .contactInfo > p {
